@@ -1,0 +1,8 @@
+<h3> My first component</h3>
+<p>{{user}}</p>
+<h4 :hidden="this.name == '123'">{{name}}</h4>
+<input :value ="name" v-show="this.name != '123'"/>
+<input type="text" v-model="name" />
+<div v-if="this.name == '123'">is ok</div>
+<div v-else>is not ok</div>
+<button v-on:click="SetUsername()" class="btn btn-primary">Update username</button>
